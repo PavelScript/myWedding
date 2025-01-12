@@ -1,0 +1,26 @@
+
+
+.header {
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+    
+    
+    
+    
+
+}
+.textNormal {
+    font-family: "Cormorant SC", serif;
+    font-size: 80px;
+    line-height: 40px;
+}
+
+.textCursive {
+    font-family: Great Vibes, cursive;
+    font-size: 60px;
+    line-height: 30px;
+    font-weight: 200;
+
+}

@@ -1,0 +1,17 @@
+
+.main {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    height: 800px;
+
+    
+}
+
+.photo {
+    margin-top: 40px;
+    width:500px;
+    height:750px;
+    border-radius: 2%;
+}
+
