@@ -10,7 +10,7 @@ function getRemainingTime() {
     const secLeft = Math.floor(diff%60)
     const minLeft = Math.floor((diff/60)%60)
     const hoursLeft = Math.floor((diff/3600)%24)
-    const daysLeft = Math.floor(diff/86400)
+    const daysLeft = Math.floor(diff/86400%30)
     const monthsLeft = Math.floor(diff/2592000)
 
 

@@ -75,6 +75,33 @@
     
     #pavel {
         top: 0%;
+        left: 80%;
+    }
+    
+    #and {
+        top: 5%;
+        left: 80%;
+    }
+    
+    #vera {
+        top: 10%;
+        left: 80%;
+    }
+
+
+}
+
+@media (min-width: 2400px) {
+    .textCursive {
+        font-size: 100px;
+    }
+
+    .textNormal {
+        font-size: 100px;
+    }
+    
+    #pavel {
+        top: 0%;
         left: 90%;
     }
     
