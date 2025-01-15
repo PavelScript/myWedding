@@ -1,6 +1,12 @@
 
 
 .app {
-    background-color: #fdf5e6;
+
     height: 100vh;
+    
+}
+
+body {
+    margin: 0;
+    padding:0;
 }

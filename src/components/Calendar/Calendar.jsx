@@ -6,7 +6,7 @@ import Date from "./Date.png";
 
 const Calendar = () => {
     return (
-        <div className={styles.calendar}>
+        <div className={styles.container}>
       
             <img className={styles.img} src={Date} alt="calendar" />
         </div>

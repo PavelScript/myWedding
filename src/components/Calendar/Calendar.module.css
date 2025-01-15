@@ -1,8 +1,9 @@
-.calendar {
+.container {
     font-family: "Cormorant SC", serif;
-    text-align: center;
     padding-top: 50px;
     background-color: #fdf5e6;
+    text-align: center;
+    
 }
 
 .img {
@@ -10,4 +11,5 @@
     height:280px;
     padding-bottom: 50px;
 }
+
 
