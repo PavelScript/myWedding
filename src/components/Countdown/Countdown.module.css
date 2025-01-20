@@ -1,12 +1,78 @@
 .container {
-    text-align: center;
+    display:flex;
     background-color: #fdf5e6;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    
+}
+.containerNumbers {
+
+    width: 19rem;
+    flex-direction: column;
+    font-size: 2.7rem;
+    padding-bottom: 1rem;
+    font-family: "Cormorant SC", serif;
+    justify-content: center;
+    background-color: #d4c5b8;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: 0.1rem solid #000000;
+
+
+}
+.img {
+    width:21rem;
+    height:19rem;
+    border: 0.1rem solid;
+    
+    
+}
+
+.container {
+    display:flex;
+    background-color: #fdf5e6;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.digits {
+    text-align: center;
 
 }
 
-h1 {
+.words {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+@media (max-width: 600px) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+p {
     font-family: "Cormorant SC", serif;
-    margin: 0px;
-    padding: 0px;
+    font-size: 1.5rem;
+    
+}
+
+@media (min-width: 1200px) {
+    .container{ 
+        flex-direction: row;
+        height: 50vh;
+    }
+
+    p {
+        font-size: 3rem;
+        
+    }
+
 }

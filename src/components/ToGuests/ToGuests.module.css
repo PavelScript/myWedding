@@ -1,8 +1,7 @@
 
 .textMain{
-    background-color: #fdf5e6;
     text-align: center;
-    font-size: 50px;
+    font-size: 4rem;
     font-family: Great Vibes, cursive;
     margin: 0;
 }
@@ -10,13 +9,46 @@
 .textSecondary{
     margin: 0;
     padding-top:20px;
-    background-color: #fdf5e6;
     text-align: center;
     font-size: 25px;
     font-family: "Cormorant SC", serif;
-    padding-bottom: 50px;
     text-wrap: pretty;
+    margin-bottom: 3rem;
 }
 .container {
-    width: 100 wh;
+    padding-top: 8rem;
+    height: 100vh;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #fdf5e6;
+    position:relative;
 }
+
+hr{
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    
+    
+}
+
+
+hr::after {
+    background-color: #fdf5e6;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+  }
+  
+  @media (min-width: 1200px) {
+    .container{ 
+        height: 20vh;
+    }
+
+
+}
+ 
