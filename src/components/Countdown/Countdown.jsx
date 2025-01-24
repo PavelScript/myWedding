@@ -6,10 +6,6 @@ import styles from "./Countdown.module.css";
 
 const moment = require('moment');
 
-
-
-
-
 const date = new Date("July 22, 2025 16:30:00 GMT+05:00")
 
 function getRemainingTime() {
@@ -36,11 +32,9 @@ function getRemainingTime() {
 }
 
 const Countdown = () => {
+
     const [time, setTime] = useState(getRemainingTime());// Используем time вместо getRemainingTime
  
-    
-    
-
     const updateTime = () => {
         setTime(getRemainingTime()); // Обновляем состояние с новым значением
     }
@@ -56,7 +50,7 @@ const Countdown = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
+        <div  className={`${styles.container}`}>
           
             <img className={styles.img} src={`${process.env.PUBLIC_URL}/images/Date.png`} alt="calendar" />
             <p>До нашей свадьбы осталось:</p>

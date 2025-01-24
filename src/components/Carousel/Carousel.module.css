@@ -1,0 +1,34 @@
+.slider {
+    width: 100vw;
+    margin:auto;
+    display:flex;
+    
+
+    
+}
+
+.container {
+    background-color: #fdf5e6;
+    height: 100vh;
+}
+
+.photo {
+    height: 95vh;
+    width: 100vw;
+    object-fit: cover;
+    /* width: 18rem; */
+   
+    
+   
+}
+
+.containerPhoto {
+    height: 95vh;
+    width: 95vw;
+    
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
