@@ -1,7 +1,4 @@
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import styles from "./Carousel.module.css"
-
 import React from "react";
 import Slider from "react-slick";
 
@@ -14,18 +11,28 @@ import Slider from "react-slick";
     slidesToScroll: 1,
     arrows: false,
   };
+
+  const imgArray = [
+  `${process.env.PUBLIC_URL}/images/dress1.jpeg`,
+  `${process.env.PUBLIC_URL}/images/dress2.jpg`,
+  `${process.env.PUBLIC_URL}/images/dress3.jpg`
+];
+  const renderImage = (imageSrc) => {
+    
+    return ( 
+      <div className={styles.containerPhoto}>
+        <img src={imageSrc} className={styles.photo} alt="dress" />
+      </div> 
+    )
+  }
   return (
     <div className={styles.container}>
+    <h3 className={styles.men}>Мужчины</h3>
     <Slider {...settings} className={styles.slider}>
-        <div className={styles.containerPhoto}>
-          <img src={`${process.env.PUBLIC_URL}/images/dress1.jpeg`} className={styles.photo} alt="dress" />
-        </div>
-        <div>
-          <img src={`${process.env.PUBLIC_URL}/images/dress2.jpg`} className={styles.photo} alt="dress" />
-        </div>
-        <div>
-          <img src={`${process.env.PUBLIC_URL}/images/dress3.jpg`} className={styles.photo} alt="dress" />
-        </div>  
+        
+          {imgArray.map(renderImage)}
+          
+        
       </Slider>
     </div>
   );

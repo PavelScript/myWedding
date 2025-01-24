@@ -1,34 +1,35 @@
-.slider {
-    width: 100vw;
-    margin:auto;
-    display:flex;
-    
+.men {
+    font-size: 1.7rem;
+    font-family: "Cormorant SC", serif;
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
 
-    
+.slider {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .container {
     background-color: #fdf5e6;
     height: 100vh;
+    overflow: hidden;
 }
 
 .photo {
-    height: 95vh;
-    width: 100vw;
+    height: 80vh;
+    width: 100%;
     object-fit: cover;
-    /* width: 18rem; */
-   
-    
-   
+    display: block;
+    margin: 0 auto;
 }
 
 .containerPhoto {
-    height: 95vh;
-    width: 95vw;
-    
+    height: 80vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    
-    
-    
+    align-items: center;
 }
