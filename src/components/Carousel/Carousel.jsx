@@ -1,40 +1,39 @@
+
 import styles from "./Carousel.module.css"
 import React from "react";
 import Slider from "react-slick";
 
- const SimpleSlider = () => {
-  var settings = {
+const SimpleSlider = ({title, imgArray}) => {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+
   };
 
-  const imgArray = [
-  `${process.env.PUBLIC_URL}/images/dress1.jpeg`,
-  `${process.env.PUBLIC_URL}/images/dress2.jpg`,
-  `${process.env.PUBLIC_URL}/images/dress3.jpg`
-];
-  const renderImage = (imageSrc) => {
-    
-    return ( 
-      <div className={styles.containerPhoto}>
-        <img src={imageSrc} className={styles.photo} alt="dress" />
-      </div> 
-    )
-  }
   return (
     <div className={styles.container}>
-    <h3 className={styles.men}>Мужчины</h3>
-    <Slider {...settings} className={styles.slider}>
-        
-          {imgArray.map(renderImage)}
-          
-        
+      <h3 className={styles.men}>{title}</h3>
+      <Slider {...settings} className={styles.slider}>
+        {imgArray.map((src, index) => (
+          <div key={index}>
+            <div className={styles.containerPhoto}>
+              <img 
+                src={`${process.env.PUBLIC_URL}${src}`} 
+                className={styles.photo} 
+                alt={`${title} ${index + 1}`} 
+              />
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );
 }
+
 export default SimpleSlider
