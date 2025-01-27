@@ -25,8 +25,8 @@ function App() {
       <ToGuests />
       <Schedule />
       <Outfits />
-      <SimpleSlider title='Мужчины' imgArray={imgMen} />
-      <SimpleSlider title='Женщины' imgArray={imgWomen} />
+      <SimpleSlider title='Мужчины' imgArray={imgMen} bgColor='rgb(239, 218, 187)'/>
+      <SimpleSlider title='Женщины' imgArray={imgWomen} bgColor='#fdf5e6'/>
       <Countdown />
     </div>
   );

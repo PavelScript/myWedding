@@ -37,7 +37,7 @@
 .container {
     height: 100vh;
     position: relative;
-    background-color: rgb(239, 218, 187);
+    background-color: #fdf5e6;
 }
 
 .container table {
@@ -60,20 +60,4 @@
     margin-top: 90%;
 }
 
-.container hr{
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    
-    
-    
-}
-.container hr::after {
-    background-color: rgb(239, 218, 187);
-    content: '§';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
-  }
+

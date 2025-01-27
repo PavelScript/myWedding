@@ -3,7 +3,7 @@ import styles from "./Carousel.module.css"
 import React from "react";
 import Slider from "react-slick";
 
-const SimpleSlider = ({title, imgArray}) => {
+const SimpleSlider = ({title, imgArray, bgColor}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -17,7 +17,7 @@ const SimpleSlider = ({title, imgArray}) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundColor: bgColor}}>
       <h3 className={styles.men}>{title}</h3>
       <Slider {...settings} className={styles.slider}>
         {imgArray.map((src, index) => (

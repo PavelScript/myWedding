@@ -37,7 +37,7 @@ const Outfits = () => {
 
             <p>Ниже будут примеры нарядов</p>
             
-            <hr className={styles.line} />
+           
         </div>
     )};
 

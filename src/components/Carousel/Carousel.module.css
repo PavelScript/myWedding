@@ -13,9 +13,11 @@
 }
 
 .container {
-    background-color: #fdf5e6;
+
     height: 100vh;
     overflow: hidden;
+    padding-left:1rem;
+    padding-right: 1rem;
 }
 
 .photo {
@@ -32,4 +34,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
