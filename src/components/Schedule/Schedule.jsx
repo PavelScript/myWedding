@@ -30,22 +30,6 @@ const Schedule = () => {
                 <div className={styles.rings}><p>Вечеринка <br></br> 20:00</p> </div>
                 <div className={styles.rings}><img src={`${process.env.PUBLIC_URL}/images/SVGs/cake.png`} alt="rings" className={styles.rings} /></div>
                 <div className={styles.rings}><p>Торт <br></br> 21:00</p> </div>
-
-            {/* <p>Расписание мероприятия</p>
-            <div className={styles.timingContainer}>
-                <img src={`${process.env.PUBLIC_URL}/images/SVGs/rings.svg`} alt="rings" className={styles.rings} />
-                <img src={`${process.env.PUBLIC_URL}/images/SVGs/weddingCake.svg`} alt="rings" className={styles.rings} />
-                <img src={`${process.env.PUBLIC_URL}/images/SVGs/cake.png`} alt="rings" className={styles.rings} />
-                <img src={`${process.env.PUBLIC_URL}/images/SVGs/champagne.png`} alt="rings" className={styles.rings} />
-               
-                      <div className={styles.vl}></div>
-                      <p className={styles.metting}>Сбор гостей 16:00</p> 
-                      <p className={styles.ceremony}> ЗАГС 16:30</p> 
-                      <p className={styles.dinner}> Ужин 18:30</p> 
-                      <p className={styles.party}> Вечеринка 20:00</p> 
-                      <p className={styles.cake}> Торт 21:30</p> 
-
-                </div> */}
             </div>
             
         </div>

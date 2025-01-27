@@ -17,6 +17,16 @@
     }
 }
 
+@keyframes slideDate{
+    from { 
+        translate: -150vw 0;
+        transform: scale(0);
+    }
+    to {
+        translate: 0 0;
+        transform: scale(1);
+    }
+}
 
 p {
     margin: 0;
@@ -40,6 +50,7 @@ p {
 
 }
 
+
 .textNormal {
     font-family: "Cormorant SC", serif;
     position:absolute;
@@ -47,9 +58,7 @@ p {
     font-size: 50px;
     animation-name: slideTextNormal;
     animation-duration: 2s;
- 
-
-    
+     
 }
 
 .textCursive {
@@ -60,6 +69,7 @@ p {
     animation-name: slideTextCursive;
     animation-duration: 2s;
 }
+
 
 
 #pavel {
@@ -75,6 +85,21 @@ p {
 #vera {
     top: 10%;
     left: 58%;
+}
+
+#date {
+    top:90%;
+    left: 25%;
+    background-color: #fdf5e6;
+    border-radius: 2rem;
+    text-align: center;
+    width:12rem;
+    border: 0.1rem solid;
+    font-family: "Cormorant SC", serif;
+    position:absolute;
+    animation-name: slideDate;
+    animation-duration: 2s;
+    font-size: 2rem;
 }
 
 @media (max-width: 600px) {

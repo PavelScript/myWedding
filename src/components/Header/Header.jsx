@@ -11,6 +11,7 @@ const Header = () => {
                 <p id={styles.pavel} className={styles.textNormal}>Павел</p>
                 <p id={styles.and} className={styles.textCursive}>&</p>
                 <p id={styles.vera} className={styles.textNormal}>Вера</p>
+                <p id={styles.date} className={styles.date}>22|07|25</p>
             </div>
         
         </div>

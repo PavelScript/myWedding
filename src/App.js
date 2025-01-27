@@ -5,6 +5,8 @@ import Countdown from './components/Countdown/Countdown';
 import Outfits from './components/Outfits/Outfits';
 import SimpleSlider from './components/Carousel/Carousel';
 import Schedule from './components/Schedule/Schedule';
+import Place from './components/Place/Place';
+import Restaurant from './components/Restaurant/Restaurant';
 
 const imgMen = [
   '/images/MenDresscode/dress1.jpeg',
@@ -24,6 +26,8 @@ function App() {
       <Header />
       <ToGuests />
       <Schedule />
+      <Place bgColor='#fdf5e6' /> 
+      <Restaurant bgColor='rgb(239, 218, 187)' />
       <Outfits />
       <SimpleSlider title='Мужчины' imgArray={imgMen} bgColor='rgb(239, 218, 187)'/>
       <SimpleSlider title='Женщины' imgArray={imgWomen} bgColor='#fdf5e6'/>
