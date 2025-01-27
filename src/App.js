@@ -6,7 +6,7 @@ import Outfits from './components/Outfits/Outfits';
 import SimpleSlider from './components/Carousel/Carousel';
 import Schedule from './components/Schedule/Schedule';
 import Place from './components/Place/Place';
-import Restaurant from './components/Restaurant/Restaurant';
+
 
 const imgMen = [
   '/images/MenDresscode/dress1.jpeg',
@@ -26,8 +26,8 @@ function App() {
       <Header />
       <ToGuests />
       <Schedule />
-      <Place bgColor='#fdf5e6' /> 
-      <Restaurant bgColor='rgb(239, 218, 187)' />
+      <Place bgColor='#fdf5e6' text='Сбор гостей возле ЗАГС' address='ул. ​Малыгина, 85' imgSrc='/images/gatheringPoint.png' /> 
+      <Place bgColor='rgb(239, 218, 187)' text='Далее направляемся в' address='ул. Мельникайте, 103а' imgSrc='/images/7Sky.png' />
       <Outfits />
       <SimpleSlider title='Мужчины' imgArray={imgMen} bgColor='rgb(239, 218, 187)'/>
       <SimpleSlider title='Женщины' imgArray={imgWomen} bgColor='#fdf5e6'/>

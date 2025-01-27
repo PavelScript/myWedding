@@ -3,7 +3,7 @@ import styles from "./Place.module.css";
 import {useRef, useState, useEffect} from "react";
 import { useInView } from "framer-motion" 
 
-const Place = ({bgColor}) => {
+const Place = ({bgColor, imgSrc, address, text, time}) => {
 
     const appearText = useRef(null)
     const isInView = useInView(appearText)
@@ -20,8 +20,8 @@ const Place = ({bgColor}) => {
         <div ref={appearText} style={{backgroundColor: bgColor}} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
             <h3>Место встречи</h3>
           
-                <div className={styles.point}><img src={`${process.env.PUBLIC_URL}/images/gatheringPoint.png`} alt="gatheringPoint" className={styles.rings} /></div>
-                <div><p>Сбор гостей возле ЗАГС <br></br>ул. ​Малыгина, 85<br></br> 16:00</p> </div>
+                <div className={styles.point}><img src={`${process.env.PUBLIC_URL} ${imgSrc}`} alt="gatheringPoint" className={styles.rings} /></div>
+                <div><p>{text}<br></br>{address}<br></br> 16:00</p> </div>
              
          
             
