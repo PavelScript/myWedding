@@ -1,6 +1,6 @@
 @keyframes slideTextNormal{
     from { 
-        translate: 150vw 0;
+        translate: 20vw 0;
     }
     to {
         translate: 0 0;
@@ -10,7 +10,7 @@
 
 @keyframes slideTextCursive{
     from { 
-        translate: -150vw 0;
+        translate: 0vw 0;
     }
     to {
         translate: 0 0;
@@ -19,7 +19,7 @@
 
 @keyframes slideDate{
     from { 
-        translate: -150vw 0;
+        translate: 0vw 0;
         transform: scale(0);
     }
     to {
@@ -143,10 +143,14 @@ p {
         left: 80%;
     }
 
+    #date {
+        left: 45%;
+    }
+
 
 }
 
-@media (min-width: 2400px) {
+/* @media (min-width: 2400px) {
     .textCursive {
         font-size: 6rem;
     }
@@ -171,4 +175,4 @@ p {
     }
 
 
-}
+} */

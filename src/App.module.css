@@ -11,3 +11,19 @@ body {
     padding:0;
 }
 
+@media (min-width: 1200px){
+    .rowContainerPlaces {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+    .rowContainerDresses {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+

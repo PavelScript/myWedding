@@ -34,5 +34,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+@media (min-width: 1200px) {
+    .container {
+        height: 50vh;
+        width: 50%;
+        padding-bottom: 6rem;
+    }
+
+    .containerPhoto {
+        justify-self: center;
+        height: 50vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo {
+        height: 40vh;
+        width: 60%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 3rem;
+    }
+
+    .slider {
+        height: 45vh;
+    }
+
+    .men {
+        padding-bottom: 0rem;
+    }
 }

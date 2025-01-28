@@ -26,11 +26,15 @@ function App() {
       <Header />
       <ToGuests />
       <Schedule />
-      <Place bgColor='#fdf5e6' text='Сбор гостей возле ЗАГС' address='ул. ​Малыгина, 85' imgSrc='/images/gatheringPoint.png' /> 
-      <Place bgColor='rgb(239, 218, 187)' text='Далее направляемся в' address='ул. Мельникайте, 103а' imgSrc='/images/7Sky.png' />
+      <div className={styles.rowContainerPlaces}>
+        <Place bgColor='#fdf5e6' text='Сбор гостей возле ЗАГС' address='ул. ​Малыгина, 85' imgSrc='/images/gatheringPoint.png' time='16:00' mainText='Место встречи' /> 
+        <Place bgColor='rgb(239, 218, 187)' text='Далее направляемся в ресторан "7 небо"' address='ул. Мельникайте, 103а' imgSrc='/images/7Sky.png' time='18:30' mainText='Ресторан' />
+      </div>
       <Outfits />
-      <SimpleSlider title='Мужчины' imgArray={imgMen} bgColor='rgb(239, 218, 187)'/>
-      <SimpleSlider title='Женщины' imgArray={imgWomen} bgColor='#fdf5e6'/>
+      <div className={styles.rowContainerDresses}>
+        <SimpleSlider title='Мужчины' imgArray={imgMen} bgColor='rgb(239, 218, 187)'/>
+        <SimpleSlider title='Женщины' imgArray={imgWomen} bgColor='#fdf5e6'/>
+      </div>
       <Countdown />
     </div>
   );
