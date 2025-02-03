@@ -22,10 +22,11 @@
     margin: 0;
 }
 .textSecondary{
+    text-indent: 2rem;
     margin: 0;
     padding-top:20px;
-    text-align: center;
-    font-size: 1.7rem;
+    text-align: justify;
+    font-size: 1.7rem; 
     font-family: "Cormorant SC", serif;
     text-wrap: pretty;
     margin-bottom: 3rem;
