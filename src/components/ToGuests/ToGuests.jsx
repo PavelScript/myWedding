@@ -2,6 +2,13 @@
 import {useRef, useState, useEffect} from "react";
 import styles from "./ToGuests.module.css";
 import { useInView } from "motion/react"
+import TextInvitation from "../TextInvitation/TextInvitation";
+
+  
+    
+    
+
+
 
 
 

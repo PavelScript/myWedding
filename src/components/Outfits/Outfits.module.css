@@ -1,6 +1,6 @@
 .container {
     opacity: 0; /* Скрываем элемент изначально */
-    transition: opacity 0.5s ease-in-out;
+  
 }
 
 .visible {

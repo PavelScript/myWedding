@@ -1,0 +1,17 @@
+.textMain{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Great Vibes, cursive;
+    margin: 0;
+}
+.textSecondary{
+    text-indent: 2rem;
+    margin: 0;
+    text-align: justify;
+    font-size: 1.7rem; 
+    font-family: "Cormorant SC", serif;
+    text-wrap: pretty;
+    margin-bottom: 0.5rem;
+
+}

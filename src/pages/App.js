@@ -1,11 +1,12 @@
-import Header from './components/Header/Header';
+import Header from '../components/Header/Header';
 import styles from './App.module.css';
-import ToGuests from './components/ToGuests/ToGuests';
-import Countdown from './components/Countdown/Countdown';
-import Outfits from './components/Outfits/Outfits';
-import SimpleSlider from './components/Carousel/Carousel';
-import Schedule from './components/Schedule/Schedule';
-import Place from './components/Place/Place';
+import ToGuests from '../components/ToGuests/ToGuests';
+import Countdown from '../components/Countdown/Countdown';
+import Outfits from '../components/Outfits/Outfits';
+import SimpleSlider from '../components/Carousel/Carousel';
+import Schedule from '../components/Schedule/Schedule';
+import Place from '../components/Place/Place';
+import SendForm from '../components/SendForm/SendForm';
 
 
 const imgMen = [
@@ -36,6 +37,7 @@ function App() {
         <SimpleSlider title='Женщины' imgArray={imgWomen} bgColor='#fdf5e6'/>
       </div>
       <Countdown />
+      <SendForm />
     </div>
   );
 }
