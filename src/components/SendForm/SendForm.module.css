@@ -14,28 +14,30 @@
 
 
 .container {
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     height: 45lvh;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position:relative;
-    background-color: #fdf5e6;
+    /* background-color: #fdf5e6; */
     opacity: 0; /* Скрываем элемент изначально */
 
     
 }
-.container h3 {
+.container p {
    
     text-wrap: pretty;
+    /* font-family: "Cormorant SC", serif; */
     text-align: center;
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 
 .radioGroup {
     padding-left: 30%;
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -52,7 +54,7 @@
     color:black;
     border-radius: 0.5rem;
     font-size: 1rem;
-    font-family: "Cormorant SC", serif;;
+    /* font-family: "Cormorant SC", serif; */
     border: none;
 
 }

@@ -36,10 +36,8 @@
     animation: contentAppear 3s forwards; /* Запускаем анимацию */
 }
 
-
-
 .container p {
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     text-wrap: pretty;
     text-align: center;
     font-size: 1.5rem;
@@ -52,7 +50,8 @@
 
 .container {
     height: 100vh;
-    background-color: rgb(239, 218, 187);
+    /* background-color: rgb(216, 208, 193); */
+    
 
 }
 
@@ -75,7 +74,7 @@
     
 }
 h3{
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     text-wrap: pretty;
     text-align: center;
     font-size: 1.5rem;

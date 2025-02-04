@@ -3,7 +3,7 @@ import styles from "./SendForm.module.css";
 import { useInView } from "motion/react"
 
 
-const SendForm = () => {
+const SendForm = ({bgColor}) => {
 
 
 
@@ -19,9 +19,9 @@ const SendForm = () => {
     }, [isInView, hasAnimated]);
 
     return (
-        <div ref={appearText} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
+        <div ref={appearText} style={{backgroundColor: bgColor}} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
             
-            <h3>Сможете ли вы присутствовать на мероприятии?</h3>
+            <p>Сможете ли вы присутствовать на мероприятии?</p>
 
            <form>
             <div className={styles.radioGroup}>

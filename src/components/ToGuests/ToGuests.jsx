@@ -2,15 +2,6 @@
 import {useRef, useState, useEffect} from "react";
 import styles from "./ToGuests.module.css";
 import { useInView } from "motion/react"
-import TextInvitation from "../TextInvitation/TextInvitation";
-
-  
-    
-    
-
-
-
-
 
 
     const Babushka = 
@@ -22,13 +13,13 @@ import TextInvitation from "../TextInvitation/TextInvitation";
         </p><br/><br/>
         <hr className={styles.line}></hr>
     </>;
-    const Jeka = 
+    const RuslanAdelina = 
     <>
-        <h3  className={styles.textMain}>Добрый день, Евгений!</h3>
+        <h3  className={styles.textMain}>Добрый день, Руслан и Аделина!</h3>
         <p className={styles.textSecondary}>Один день в этом году будет для нас       
         особенным и мы хотим провести его в кругу близких. <br/> 
         Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
-        Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
+        Просим не дарить нам цветы, так как скоро 
         у нас планируется свадебное путешествие.</p><br/><br/>
         <hr className={styles.line}></hr>
     </>;
@@ -57,7 +48,7 @@ import TextInvitation from "../TextInvitation/TextInvitation";
 
   
     const TEXT_MAP = {
-        "/jeka" : Jeka,
+        "/ruslanadelina" : RuslanAdelina,
         "/max": Max,
         "/sasha": Sasha,
         "/babushka": Babushka
@@ -65,10 +56,12 @@ import TextInvitation from "../TextInvitation/TextInvitation";
     
     const defaultText = <><h3  className={styles.textMain}>Дорогие Гости!</h3>
             <p className={styles.textSecondary}>Один день в этом году будет для нас       
-            особенным и мы хотим провести его в кругу близких. <br/> 
-            Поэтому мы приглашаем Вас, разделить с нами столь радостный момент! <br/>
+            особенным и мы хотим провести его в кругу близких. </p> 
+            <p className={styles.textSecondary}>
+            Поэтому мы приглашаем Вас, разделить с нами столь радостный момент! </p>
+            <p className={styles.textSecondary}>
             Ждём всех с хорошим настроением. Просим не дарить нам цветы, так как скоро 
-            у нас планируется свадебное путешествие.</p><br/><br/>
+            у нас планируется свадебное путешествие. </p>
             <hr className={styles.line}></hr>
             </>;
     
@@ -76,7 +69,7 @@ import TextInvitation from "../TextInvitation/TextInvitation";
 
 
 
-const ToGuests = () => {
+const ToGuests = ({bgColor}) => {
 
     const appearText = useRef(null)
     const isInView = useInView(appearText)
@@ -90,7 +83,7 @@ const ToGuests = () => {
 
 
     return (
-        <div ref={appearText} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
+        <div ref={appearText} style={{ backgroundColor: bgColor }}  className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
 
             {TEXT_MAP[window.location.pathname.toLocaleLowerCase()] || defaultText}
         </div>

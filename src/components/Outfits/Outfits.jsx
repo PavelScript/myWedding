@@ -10,7 +10,7 @@ const mapThroughColors = (color) => {
     return (<td key={color} bgcolor = {color}></td>)
 }
 
-const Outfits = () => {
+const Outfits = ({bgColor}) => {
 
     const appearText = useRef(null)
     const isInView = useInView(appearText)
@@ -24,10 +24,10 @@ const Outfits = () => {
     
 
     return (
-        <div ref={appearText} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
+        <div ref={appearText} style={{backgroundColor: bgColor}} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
         
             <p>Просим вас придерживаться представленных на фото стилей и цветов в ваших нарядах.</p>
-            <table>
+            <table className={styles.table}>
                 <tbody>
                 <tr>
                     {colors.map(mapThroughColors)}

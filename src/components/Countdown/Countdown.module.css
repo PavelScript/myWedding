@@ -1,6 +1,6 @@
 .container {
     display:flex;
-    background-color: #fdf5e6;
+    /* background-color: #fdf5e6; */
     padding-bottom: 2rem;
     flex-direction: column;
     justify-content: space-evenly;
@@ -59,7 +59,7 @@
 }
 
 p {
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     font-size: 1.5rem;
     
 }

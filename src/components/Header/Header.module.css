@@ -1,9 +1,11 @@
-@keyframes slideTextNormal{
+@keyframes slideTextNormal {
     from { 
-        translate: 20vw 0;
+        transform: translateX(20vw);
+        opacity: 0;              /* Начинать с прозрачности */
     }
-    to {
-        translate: 0 0;
+    to { 
+        transform: translateX(0);
+        opacity: 1;              /* Заканчивать полной видимостью */
     }
 }
 
@@ -36,7 +38,7 @@ p {
     justify-content: center;
     user-select: none;
     width: 100%;
-    height: 105vh;
+    height: 100vh;
   
     padding-bottom: 0px;        
 }
@@ -52,17 +54,16 @@ p {
 
 
 .textNormal {
-    font-family: "Cormorant SC", serif;
+    /* font-family: sans-serif; */
     position:absolute;
     color: white;
     font-size: 50px;
-    animation-name: slideTextNormal;
-    animation-duration: 2s;
+    animation: slideTextNormal 2s ease-out;
      
 }
 
 .textCursive {
-    font-family: Great Vibes, cursive;
+    font-family: Great Vibes,cursive, serif;
     position:absolute;
     color: white;
     font-size: 50px;
@@ -88,18 +89,23 @@ p {
 }
 
 #date {
-    top:90%;
-    left: 25%;
-    background-color: #fdf5e6;
-    border-radius: 2rem;
+    top:92.5%;
+    left: 0%;
+    /* background-color: #fdf5e6; */
+    background-color: rgb(86, 85, 85);
+    color:white;
+    /* border-radius: 2rem; */
     text-align: center;
-    width:12rem;
-    border: 0.1rem solid;
-    font-family: "Cormorant SC", serif;
+    width: 100%;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+
+    /* font-family: sans-serif; */
     position:absolute;
     animation-name: slideDate;
     animation-duration: 2s;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 @media (max-width: 600px) {
@@ -150,29 +156,3 @@ p {
 
 }
 
-/* @media (min-width: 2400px) {
-    .textCursive {
-        font-size: 6rem;
-    }
-
-    .textNormal {
-        font-size: 6rem;
-    }
-    
-    #pavel {
-        top: 5%;
-        left: 87%;
-    }
-    
-    #and {
-        top: 12%;
-        left: 87%;
-    }
-    
-    #vera {
-        top: 18%;
-        left: 87%;
-    }
-
-
-} */

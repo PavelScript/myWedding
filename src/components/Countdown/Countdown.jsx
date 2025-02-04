@@ -31,7 +31,7 @@ function getRemainingTime() {
 
 }
 
-const Countdown = () => {
+const Countdown = ({bgColor, gradient}) => {
 
     const [time, setTime] = useState(getRemainingTime());// Используем time вместо getRemainingTime
  
@@ -50,9 +50,9 @@ const Countdown = () => {
     }, []);
 
     return (
-        <div  className={`${styles.container}`}>
+        <div  className={`${styles.container}` } style={{backgroundColor: bgColor, background: gradient}}>
           
-            <img className={styles.img} src={`${process.env.PUBLIC_URL}/images/Date.png`} alt="calendar" />
+            <img className={styles.img} src={`${process.env.PUBLIC_URL}/images/Date.png`} loading="lazy" alt="calendar" />
             <p>До нашей свадьбы осталось:</p>
             <div className={styles.containerNumbers}>
 

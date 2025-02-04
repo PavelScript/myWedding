@@ -37,7 +37,7 @@
 }
 
 .container p {
-    font-family: "Cormorant SC", serif;
+    /* font-family: sans-serif; */
     text-wrap: pretty;
     text-align: center;
     font-size: 1.5rem;
@@ -54,7 +54,7 @@
 }
 
 h3{
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     text-wrap: pretty;
     text-align: center;
     font-size: 1.5rem;

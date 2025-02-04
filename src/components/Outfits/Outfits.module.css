@@ -18,7 +18,7 @@
 }
 
 .container p {
-    font-family: "Cormorant SC", serif;
+    /* font-family: sans-serif; */
     text-wrap: pretty;
     text-align: center;
     font-size: 1.5rem;
@@ -56,9 +56,7 @@
     border: 0.1rem solid black;
 }
 
-.line {
-    margin-top: 90%;
-}
+
 
 
 @media (min-width: 1200px) {

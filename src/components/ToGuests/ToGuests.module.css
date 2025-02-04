@@ -13,23 +13,37 @@
     }
 }
 
+@font-face {
+    font-family: Brachetto;
+
+    src: url("./font/Brachetto.ttf") format("opentype");
+    
+
+}
+
+
+
 
 .textMain{
     padding-top: 3rem;
+    font-weight: 100;
     text-align: center;
-    font-size: 4rem;
-    font-family: Great Vibes, cursive;
+    font-size: 80px;
+    line-height: 3.5rem;
+    font-family: Brachetto;
+    font-display: swap;
     margin: 0;
 }
 .textSecondary{
-    text-indent: 2rem;
+    text-align: center;
     margin: 0;
-    padding-top:20px;
-    text-align: justify;
+    /* text-align: justify; */
     font-size: 1.7rem; 
-    font-family: "Cormorant SC", serif;
+    /* font-family: "Cormorant SC", serif; */
     text-wrap: pretty;
-    margin-bottom: 3rem;
+
+
+    
 
 }
 .container {
@@ -37,7 +51,7 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position:relative;
-    background-color: #fdf5e6;
+    /* background-color: #fdf5e6; */
     opacity: 0; /* Скрываем элемент изначально */
     transition: opacity 0.5s ease-in-out;
     
@@ -85,7 +99,7 @@
     }
 
     .container .textMain{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }

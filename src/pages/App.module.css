@@ -27,3 +27,6 @@ body {
     }
 }
 
+h1, h3, p, label, button {
+    font-family: "Cormorant SC", serif;
+}
