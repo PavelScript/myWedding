@@ -50,14 +50,21 @@
     width:50%;
     height: 10%;
     margin-top: 2rem;
-    background-color:rgb(239, 218, 187);
+    background-color:#CECECD;
+    background: linear-gradient(356deg, rgba(206,206,205,1) 35%, rgba(253,245,230,1) 100%);
     color:black;
     border-radius: 0.5rem;
+    border: 0.05rem solid;
     font-size: 1rem;
     /* font-family: "Cormorant SC", serif; */
-    border: none;
+   
 
 }
+
+.submitText {
+    padding-top:2rem;
+}
+
 
 
 

@@ -3,7 +3,7 @@ import styles from "./Place.module.css";
 import {useRef, useState, useEffect} from "react";
 import { useInView } from "framer-motion" 
 
-const Place = ({bgColor, imgSrc, address, text, time, mainText,gradient}) => {
+const Place = ({bgColor, imgSrc, address, text, time, mainText,gradient=bgColor}) => {
 
     const appearText = useRef(null)
     const isInView = useInView(appearText)

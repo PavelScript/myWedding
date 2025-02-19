@@ -40,7 +40,7 @@
     background-color: #fdf5e6;
 }
 
-.container table {
+.container .table {
     padding-top: 4rem;
     display:flex;
     justify-content: center;
@@ -55,9 +55,6 @@
 .container tr {
     border: 0.1rem solid black;
 }
-
-
-
 
 @media (min-width: 1200px) {
     .container {

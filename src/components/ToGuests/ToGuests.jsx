@@ -11,7 +11,7 @@ import { useInView } from "motion/react"
         особенным и мы хотим провести его в кругу близких. <br/> 
         Поэтому мы приглашаем Тебя, разделить с нами столь радостный момент! <br/>
         </p><br/><br/>
-        <hr className={styles.line}></hr>
+
     </>;
     const RuslanAdelina = 
     <>
@@ -21,7 +21,7 @@ import { useInView } from "motion/react"
         Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
         Просим не дарить нам цветы, так как скоро 
         у нас планируется свадебное путешествие.</p><br/><br/>
-        <hr className={styles.line}></hr>
+
     </>;
 
     const Max = 
@@ -32,7 +32,7 @@ import { useInView } from "motion/react"
         Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
         Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
         у нас планируется свадебное путешествие.</p><br/><br/>
-        <hr className={styles.line}></hr>
+
     </>;
 
     const Sasha = 
@@ -43,12 +43,24 @@ import { useInView } from "motion/react"
         Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
         Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
         у нас планируется свадебное путешествие.</p><br/><br/>
-        <hr className={styles.line}></hr>
+
+    </>;
+
+    const VictorAnastasia = 
+    <>
+        <h3  className={styles.textMain}>Добрый день, Виктор и Анастасия!</h3>
+        <p className={styles.textSecondary}>Один день в этом году будет для нас       
+        особенным и мы хотим провести его в кругу близких. <br/> 
+        Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
+        Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
+        у нас планируется свадебное путешествие.</p><br/><br/>
+
     </>;
 
   
     const TEXT_MAP = {
         "/ruslanadelina" : RuslanAdelina,
+        "/victoranastasia": VictorAnastasia,
         "/max": Max,
         "/sasha": Sasha,
         "/babushka": Babushka
@@ -62,7 +74,7 @@ import { useInView } from "motion/react"
             <p className={styles.textSecondary}>
             Ждём всех с хорошим настроением. Просим не дарить нам цветы, так как скоро 
             у нас планируется свадебное путешествие. </p>
-            <hr className={styles.line}></hr>
+    
             </>;
     
     

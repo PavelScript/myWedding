@@ -126,6 +126,16 @@ p {
 }
 
 @media (min-width: 1300px) {
+
+    .photo {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        /* filter: blur(0.1rem); */
+    
+    }
+    
     .textCursive {
         font-size: 100px;
     }
@@ -149,9 +159,7 @@ p {
         left: 80%;
     }
 
-    #date {
-        left: 45%;
-    }
+
 
 
 }
