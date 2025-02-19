@@ -2,68 +2,11 @@
 import {useRef, useState, useEffect} from "react";
 import styles from "./ToGuests.module.css";
 import { useInView } from "motion/react"
+import texts from './texts';
 
-
-    const Babushka = 
-    <>
-        <h3  className={styles.textMain}>Здравствуй, Бабушка!</h3>
-        <p className={styles.textSecondary}>Один день в этом году будет для нас       
-        особенным и мы хотим провести его в кругу близких. <br/> 
-        Поэтому мы приглашаем Тебя, разделить с нами столь радостный момент! <br/>
-        </p><br/><br/>
-
-    </>;
-    const RuslanAdelina = 
-    <>
-        <h3  className={styles.textMain}>Добрый день, Руслан и Аделина!</h3>
-        <p className={styles.textSecondary}>Один день в этом году будет для нас       
-        особенным и мы хотим провести его в кругу близких. <br/> 
-        Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
-        Просим не дарить нам цветы, так как скоро 
-        у нас планируется свадебное путешествие.</p><br/><br/>
-
-    </>;
-
-    const Max = 
-    <>
-        <h3  className={styles.textMain}>Добрый день, Максим!</h3>
-        <p className={styles.textSecondary}>Один день в этом году будет для нас       
-        особенным и мы хотим провести его в кругу близких. <br/> 
-        Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
-        Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
-        у нас планируется свадебное путешествие.</p><br/><br/>
-
-    </>;
-
-    const Sasha = 
-    <>
-        <h3  className={styles.textMain}>Добрый день, Саша!</h3>
-        <p className={styles.textSecondary}>Один день в этом году будет для нас       
-        особенным и мы хотим провести его в кругу близких. <br/> 
-        Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
-        Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
-        у нас планируется свадебное путешествие.</p><br/><br/>
-
-    </>;
-
-    const VictorAnastasia = 
-    <>
-        <h3  className={styles.textMain}>Добрый день, Виктор и Анастасия!</h3>
-        <p className={styles.textSecondary}>Один день в этом году будет для нас       
-        особенным и мы хотим провести его в кругу близких. <br/> 
-        Поэтому мы приглашаем друзей, разделить с нами столь радостный момент! <br/>
-        Ждём всех тебя настроением. Просим не дарить нам цветы, так как скоро 
-        у нас планируется свадебное путешествие.</p><br/><br/>
-
-    </>;
-
-  
+ 
     const TEXT_MAP = {
-        "/ruslanadelina" : RuslanAdelina,
-        "/victoranastasia": VictorAnastasia,
-        "/max": Max,
-        "/sasha": Sasha,
-        "/babushka": Babushka
+        "/ruslanadelina" : texts.RuslanAdelina.textH
     }
     
     const defaultText = <><h3  className={styles.textMain}>Дорогие Гости!</h3>
@@ -81,7 +24,7 @@ import { useInView } from "motion/react"
 
 
 
-const ToGuests = ({bgColor}) => {
+const ToGuests = ({bgColor, gradient}) => {
 
     const appearText = useRef(null)
     const isInView = useInView(appearText)
@@ -95,7 +38,7 @@ const ToGuests = ({bgColor}) => {
 
 
     return (
-        <div ref={appearText} style={{ backgroundColor: bgColor }}  className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
+        <div ref={appearText} style={{backgroundColor: bgColor, background: gradient}}  className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
 
             {TEXT_MAP[window.location.pathname.toLocaleLowerCase()] || defaultText}
         </div>

@@ -3,7 +3,7 @@ import styles from "./Place.module.css";
 import {useRef, useState, useEffect} from "react";
 import { useInView } from "framer-motion" 
 
-const Place = ({bgColor, imgSrc, address, text, time, mainText,gradient=bgColor}) => {
+const Place = ({bgColor, fontColor, imgSrc, address, text, time, mainText,gradient=bgColor}) => {
 
     const appearText = useRef(null)
     const isInView = useInView(appearText)
@@ -17,7 +17,7 @@ const Place = ({bgColor, imgSrc, address, text, time, mainText,gradient=bgColor}
     
 
     return (
-        <div ref={appearText} style={{backgroundColor: bgColor, background: gradient}} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
+        <div ref={appearText} style={{backgroundColor: bgColor, background: gradient, color: fontColor}} className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
             <h3>{mainText}</h3>
           
                 <div className={styles.point}><img src={`${process.env.PUBLIC_URL} ${imgSrc}`} loading="lazy" alt="gatheringPoint" className={styles.rings} /></div>

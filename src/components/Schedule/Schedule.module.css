@@ -23,7 +23,7 @@
 
 .container {
     opacity: 0; /* Скрываем элемент изначально */
-    transition: opacity 0.5s ease-in-out;
+    
 }
 
 .visible {
@@ -64,6 +64,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0.1rem;
     grid-auto-rows: min-content;
+
     
 }
 
@@ -73,7 +74,7 @@
     display:flex;
     
 }
-h3{
+.container h3{
     /* font-family: "Cormorant SC", serif; */
     text-wrap: pretty;
     text-align: center;
@@ -81,12 +82,14 @@ h3{
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin:0;
+    color:white;
 }
 .gridWrapper .box img {
     margin: auto;
     padding: auto;
     width: 5rem;
     height: 5rem;
+    filter: brightness(0) invert(1);
 }
 
 .gridWrapper .box p {
@@ -95,6 +98,7 @@ h3{
     padding: auto;
     width: 10rem;
     height: 3rem;
+    color:white;
 }
 
 @media(min-width: 1200px) {
@@ -104,10 +108,15 @@ h3{
 
     .gridWrapper p{
         padding-right: 70%;
+        
     }
 
     .gridWrapper img{
         padding-left: 70%;
+    }
+
+    .gridWrapper {
+        padding-bottom: 4rem;
     }
 }
 

@@ -21,6 +21,9 @@
     position:relative;
     /* background-color: #fdf5e6; */
     opacity: 0; /* Скрываем элемент изначально */
+    -webkit-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+-moz-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
 
     
 }
@@ -33,6 +36,8 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
+    margin:0;
+    padding-top: 2rem;
 }
 
 .radioGroup {
@@ -50,9 +55,8 @@
     width:50%;
     height: 10%;
     margin-top: 2rem;
-    background-color:#CECECD;
-    background: linear-gradient(356deg, rgba(206,206,205,1) 35%, rgba(253,245,230,1) 100%);
-    color:black;
+    background-color:rgba(57, 73, 114, 1);
+    color:rgb(255, 255, 255);
     border-radius: 0.5rem;
     border: 0.05rem solid;
     font-size: 1rem;

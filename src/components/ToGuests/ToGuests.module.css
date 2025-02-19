@@ -33,6 +33,7 @@
     font-family: Brachetto;
     font-display: swap;
     margin: 0;
+    
 }
 .textSecondary{
     text-align: center;
@@ -52,9 +53,11 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     position:relative;
-    /* background-color: #fdf5e6; */
     opacity: 0; /* Скрываем элемент изначально */
-    transition: opacity 0.5s ease-in-out;
+    -webkit-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+    -moz-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+    box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+
     
 
 }
