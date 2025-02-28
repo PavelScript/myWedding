@@ -65,7 +65,7 @@ p {
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
     .container{ 
         flex-direction: row;
         height: 50vh;

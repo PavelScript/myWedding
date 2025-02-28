@@ -5,24 +5,33 @@ import { useInView } from "motion/react"
 import texts from './texts';
 
  
-    const TEXT_MAP = {
-        "/ruslanadelina" : texts.RuslanAdelina.textH
+    const TEXT_MAP_GREETING1 = {
+        "/ruslanadelina" : texts.RuslanAdelina.textH1,
+        "/": texts.defaultText.textH1
     }
-    
-    const defaultText = <><h3  className={styles.textMain}>Дорогие Гости!</h3>
-            <p className={styles.textSecondary}>Один день в этом году будет для нас       
-            особенным и мы хотим провести его в кругу близких. </p> 
-            <p className={styles.textSecondary}>
-            Поэтому мы приглашаем Вас, разделить с нами столь радостный момент! </p>
-            <p className={styles.textSecondary}>
-            Ждём всех с хорошим настроением. Просим не дарить нам цветы, так как скоро 
-            у нас планируется свадебное путешествие. </p>
-    
-            </>;
-    
-    
 
+    const TEXT_MAP_GREETING2 = {
+        "/ruslanadelina" : texts.RuslanAdelina.textH2,
+        "/": texts.defaultText.textH2
+    }
 
+    const TEXT_MAP_PARAG1 = {
+        "/ruslanadelina" : texts.RuslanAdelina.textP1,
+        "/": texts.defaultText.textP1
+
+    }
+
+    const TEXT_MAP_PARAG2 = {
+        "/ruslanadelina" : texts.RuslanAdelina.textP2,
+        "/": texts.defaultText.textP2
+
+    }
+
+    const TEXT_MAP_PARAG3 = {
+        "/ruslanadelina" : texts.RuslanAdelina.textP2,
+        "/": texts.defaultText.textP2
+
+    }
 
 const ToGuests = ({bgColor, gradient}) => {
 
@@ -37,10 +46,18 @@ const ToGuests = ({bgColor, gradient}) => {
     }, [isInView, hasAnimated]);
 
 
+    
     return (
         <div ref={appearText} style={{backgroundColor: bgColor, background: gradient}}  className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
-
-            {TEXT_MAP[window.location.pathname.toLocaleLowerCase()] || defaultText}
+            <div className={styles.greetingContainer}>
+            <h2 className={styles.greeting}>{TEXT_MAP_GREETING1[window.location.pathname.toLocaleLowerCase()] }</h2>
+            {window.location.pathname.toLocaleLowerCase() === "/"
+            ? null 
+            : <h2 className={styles.greeting}>{TEXT_MAP_GREETING2[window.location.pathname.toLocaleLowerCase()]}</h2>}
+            <p className={styles.text}>{TEXT_MAP_PARAG1[window.location.pathname.toLocaleLowerCase()]}</p> 
+            <p className={styles.text}>{TEXT_MAP_PARAG2[window.location.pathname.toLocaleLowerCase()]}</p> 
+            <p className={styles.text}>{TEXT_MAP_PARAG3[window.location.pathname.toLocaleLowerCase()]}</p> 
+            </div>
         </div>
     )};
 

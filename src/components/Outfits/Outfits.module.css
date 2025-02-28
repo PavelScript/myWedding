@@ -1,5 +1,14 @@
 .container {
     opacity: 0; /* Скрываем элемент изначально */
+    height: 100vh;
+    position: relative;
+    background-color: #fdf5e6;
+    -webkit-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+-moz-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
+display:flex;
+flex-direction: column;
+justify-content: center;
   
 }
 
@@ -20,29 +29,13 @@
 .container p {
     /* font-family: sans-serif; */
     text-wrap: pretty;
-    margin:0;
+    margin-top:0;
     text-align: center;
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.container p:last-of-type {
-    padding-top: 8rem;
-}
-
-.container p:first-child {
-    padding-top: 3rem;
-}
-
-.container {
-    height: 100vh;
-    position: relative;
-    background-color: #fdf5e6;
-    -webkit-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
--moz-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
-}
 
 .container .table {
     padding-top: 4rem;

@@ -21,79 +21,64 @@
 
 }
 
-
-
-
-.textMain{
-    padding-top: 3rem;
-    font-weight: 100;
-    text-align: center;
-    font-size: 80px;
-    line-height: 3.5rem;
-    font-family: Brachetto;
-    font-display: swap;
-    margin: 0;
-    
-}
-.textSecondary{
-    text-align: center;
-    margin: 0;
-    /* text-align: justify; */
-    font-size: 1.5rem; 
-    font-family: "Inter", serif;
-    font-weight: 200;
-    text-wrap: pretty;
-
-
-    
-
-}
 .container {
+    padding-top: 3rem;
     height: 100lvh;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+
     position:relative;
     opacity: 0; /* Скрываем элемент изначально */
     -webkit-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
     -moz-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
     box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
-
     
 
 }
 
+.greeting {    
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: Great Vibes, cursive;
+    margin: 0;
+    
 
-  
-  @media (min-width: 1200px) {
-    .container{ 
-        height: 30vh;
-        
-    }
-
-    .container hr::after {
-        display:none;
-      }
-
-    .container hr{
-        display:none;
-    }
-      
 }
 
-@media (max-width: 460px){
-    .container .textSecondary{
-        font-size: 1.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: start;
-        margin-left:1rem;
+.greetingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center
+}
+
+.text{
+    font-size: 1.7rem; 
+    font-family: "Cormorant SC", serif;
+    text-wrap: pretty;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+
+
+
+
+@media (max-width: 760px){
+    .container .greeting {
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+
+        
+
     }
 
-    .container .textMain{
-        font-size: 2.5rem;
+    .container .text{
+        text-align: start;
+        font-size: 1.2rem;
         padding-left: 1rem;
         padding-right: 1rem;
         margin-left:1rem;
-        text-align: start;
+
+
+        
     }
 }
