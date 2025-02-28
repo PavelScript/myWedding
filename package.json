@@ -43,5 +43,5 @@
   "devDependencies": {
     "resolve-url-loader": "^5.0.0"
   },
-  "proxy": "http://45.153.189.160"
+  "proxy": "http://45.153.189.160:5000"
 }
