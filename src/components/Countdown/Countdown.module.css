@@ -9,19 +9,41 @@
     
 }
 .containerNumbers {
-
-    width: 19rem;
-    flex-direction: column;
-    font-size: 2.7rem;
-    padding-bottom: 1rem;
-    font-family: "Cormorant SC", serif;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+    grid-template-rows: auto auto; /* Две строки */
+    color:black;
+    border: 0.1rem solid black;
+    width:21rem;
+    height:5rem;
+    text-align: center;
     background-color: white;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    border: 0.1rem solid #000000;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+  
+  }
+  
+  .labelMonths { grid-area: 1 / 1; 
+align-self: center;}
+  .labelDays { grid-area: 1 / 2;
+    align-self: center; }
+  .labelHours { grid-area: 1 / 3;
+    align-self: center; }
+  .labelMinutes { grid-area: 1 / 4;
+    align-self: center; }
+  .labelSeconds { grid-area: 1 / 5;
+    align-self: center; }
+  
+  .valueMonths { grid-area: 2 / 1; }
+  .valueDays { grid-area: 2 / 2; }
+  .valueHours { grid-area: 2 / 3; }
+  .valueMinutes { grid-area: 2 / 4; }
+  .valueSeconds { grid-area: 2 / 5; }
 
 
+p {
+    color:rgb(255, 255, 255);
 }
 .img {
     width:21rem;
@@ -40,18 +62,8 @@
 }
 
 
-.digits {
-    text-align: center;
-    color:black
 
-}
 
-.words {
-    font-size: 1.5rem;
-    color:black;
-    text-align: center;
-
-}
 
 @media (max-width: 600px) {
     p {

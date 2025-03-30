@@ -8,6 +8,7 @@ const moment = require('moment');
 
 const date = new Date("July 22, 2025 16:30:00 GMT+05:00")
 
+
 function getRemainingTime() {
     const now = new Date()
     const diff = (Date.parse(date) - Date.parse(now))/1000
@@ -55,15 +56,19 @@ const Countdown = ({bgColor, fontColor}) => {
             <img className={styles.img} src={`${process.env.PUBLIC_URL}/images/Date_white.png`} loading="lazy" alt="calendar" />
             <p>До нашей свадьбы осталось:</p>
             <div className={styles.containerNumbers}>
+                    
+                <div className={styles.labelMonths}>Мес</div>
+                <div className={styles.labelDays}>Дн</div>
+                <div className={styles.labelHours}>Час</div>
+                <div className={styles.labelMinutes}>Мин</div>
+                <div className={styles.labelSeconds}>Сек</div>
 
-                    <div className={styles.words}>
-                    Мес | Дн | Часы | Мин | Сек
-                    </div>
-
-
-                    <div className={styles.digits}>
-                    {time.months} | {time.days} | {time.hours} | {time.minutes} | {time.seconds}
-                    </div>
+                <div className={styles.valueMonths}>{time.months}</div>
+                <div className={styles.valueDays}>{time.days}</div>
+                <div className={styles.valueHours}>{time.hours}</div>
+                <div className={styles.valueMinutes}>{time.minutes}</div>
+                <div className={styles.valueSeconds}>{time.seconds}</div>
+                    
 
             </div>
         </div>
