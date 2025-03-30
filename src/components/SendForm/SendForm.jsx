@@ -71,7 +71,7 @@ const SendForm = ({bgColor}) => {
                 <div className={styles.formQuestions}>
                     <div className={styles.nameInput}>
                         <label className={styles.label} for="fname">Введите своё имя <br></br> (ваши имена)</label>
-                        <input className={styles.name} onChange={(e)=>setName(e.target.value)} type="text" id="fname" name="fname" placeholder="Александр Александров, Александра Александрова"/>
+                        <input className={styles.name} onChange={(e)=>setName(e.target.value)} type="text" id="fname" name="fname" placeholder="Иван Иванов, Александра Александрова"/>
                     </div>
                     <div className={styles.radioGroup}>
                         <div className={styles.radioItem1}>

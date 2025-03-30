@@ -15,16 +15,15 @@
 
 @font-face {
     font-family: Brachetto;
-
     src: url("./font/Brachetto.ttf") format("opentype");
     
-
 }
+
+
 
 .container {
     padding-top: 3rem;
-    height: 100lvh;
-
+    
     position:relative;
     opacity: 0; /* Скрываем элемент изначально */
     -webkit-box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
@@ -36,49 +35,84 @@
 
 .greeting {    
     font-size: 4rem;
-    font-weight: 100;
+    font-weight: 600;
     font-family: Great Vibes, cursive;
     margin: 0;
+    margin-bottom: 2rem;
+    color: #394972;
     
 
 }
 
 .greetingContainer {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-self: center;
-    text-align: center
-}
+    text-align: center;
+    justify-items: center;}
 
 .text{
-    font-size: 1.7rem; 
-    font-family: "Cormorant SC", serif;
+    font-size: 1.5rem; 
+    font-family: Cormorant;
     text-wrap: pretty;
+    width:40%;
     margin-bottom: 0.5rem;
     margin-top: 0;
+    align-self: center;
+    color: #394972;
+    margin-left:0%;
+}   
+
+.photo {
+    width:25%;
+    align-self: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
+
+.cake {
+    width: 15%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+}
+
 
 
 
 
 
 @media (max-width: 760px){
+
+    /* .container {
+        height: 100lvh;
+    } */
     .container .greeting {
-        padding-bottom: 1rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-bottom: 0.1rem;
+
 
         
 
     }
 
     .container .text{
-        text-align: start;
-        font-size: 1.2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-left:1rem;
+        text-align: center;
+        font-size: 1.1rem;
+        width:80%;
+         }
 
+    .photo {
+        margin-top: 5%;
+        width:60%;
+        margin-bottom: 10%;
+        
+    }
 
+    .cake {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 50%;
         
     }
 }

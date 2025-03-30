@@ -50,13 +50,16 @@ const ToGuests = ({bgColor, gradient}) => {
     return (
         <div ref={appearText} style={{backgroundColor: bgColor, background: gradient}}  className={`${styles.container} ${hasAnimated ? styles.visible : ''}`}>
             <div className={styles.greetingContainer}>
-            <h2 className={styles.greeting}>{TEXT_MAP_GREETING1[window.location.pathname.toLocaleLowerCase()] }</h2>
-            {window.location.pathname.toLocaleLowerCase() === "/"
-            ? null 
-            : <h2 className={styles.greeting}>{TEXT_MAP_GREETING2[window.location.pathname.toLocaleLowerCase()]}</h2>}
-            <p className={styles.text}>{TEXT_MAP_PARAG1[window.location.pathname.toLocaleLowerCase()]}</p> 
-            <p className={styles.text}>{TEXT_MAP_PARAG2[window.location.pathname.toLocaleLowerCase()]}</p> 
-            <p className={styles.text}>{TEXT_MAP_PARAG3[window.location.pathname.toLocaleLowerCase()]}</p> 
+                <h2 className={styles.greeting}>{TEXT_MAP_GREETING1[window.location.pathname.toLocaleLowerCase()] }</h2>
+                {window.location.pathname.toLocaleLowerCase() === "/"
+                ? null 
+                : <h2 className={styles.greeting}>{TEXT_MAP_GREETING2[window.location.pathname.toLocaleLowerCase()]}</h2>}
+
+                <p className={styles.text}>{TEXT_MAP_PARAG1[window.location.pathname.toLocaleLowerCase()]}</p> 
+                <img src={`${process.env.PUBLIC_URL}/images/textDivider.webp`} loading="lazy" className={styles.photo} alt="Devider" /> 
+                {/* <img src={`${process.env.PUBLIC_URL}/images/cake.webp`} className={styles.cake} loading="lazy" alt="Cake" /> */}
+                 
+
             </div>
         </div>
     )};
