@@ -44,8 +44,8 @@ const GuestList = () => {
       <table border="1" cellPadding="10" cellSpacing="0">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Status</th>
+            <th>Гости</th>
+            <th>Придут</th>
             <th>Location</th>
           </tr>
         </thead>
@@ -53,7 +53,7 @@ const GuestList = () => {
           {guests.map((guest) => (
             <tr key={guest.id}>
               <td>{guest.name}</td>
-              <td>{guest.coming ? 'Coming' : 'Not Coming'}</td>
+              <td>{guest.coming ? 'Да' : 'Не смогу'}</td>
               <td>{guest.location || 'N/A'}</td>
             </tr>
           ))}

@@ -1,6 +1,5 @@
 .container {
     background-color: antiquewhite;
-    height:100lvh;
     margin:0;
     display: flex;
     flex-direction: column;
@@ -16,4 +15,5 @@ table {
     margin-top: 0.5%;
     align-self: center;
     text-align: center;
+    width:40%;
 }
