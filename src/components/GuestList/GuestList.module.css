@@ -1,0 +1,19 @@
+.container {
+    background-color: antiquewhite;
+    height:100lvh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    
+    margin:0;
+    align-self: center;
+}
+
+table {
+    margin-top: 0.5%;
+    align-self: center;
+    text-align: center;
+}
