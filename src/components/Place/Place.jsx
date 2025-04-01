@@ -21,7 +21,7 @@ const Place = ({bgColor, fontColor, imgSrc, address, text, time, mainText,gradie
             <h3>{mainText}</h3>
           
                 <div className={styles.point}><img src={`${process.env.PUBLIC_URL} ${imgSrc}`} loading="lazy" alt="gatheringPoint" className={styles.rings} /></div>
-                <div><p>{text}<br></br>{address}<br></br> {time}</p> </div>
+                <div><p style={{color:fontColor}}>{text}<br></br>{address}<br></br> {time}</p> </div>
              
          
             
