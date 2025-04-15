@@ -11,22 +11,88 @@ body {
     padding:0;
 }
 
-@media (min-width: 1200px){
-    .rowContainerPlaces {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-      }
-
-    .rowContainerDresses {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-}
 
 h1, h3, p, label, button {
     font-family: "Cormorant SC", serif;
 }
+
+.modalStyle {
+    position: fixed;
+    border-radius: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 5;
+    background-color: aliceblue;
+
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .yesButton {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin-right: 2rem;
+                background-color: rgba(57, 73, 114, 1);
+                color: white;
+                font-size: 2rem;
+            }
+            
+            .noButton {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin-left: 2rem;
+                background-color: rgba(57, 73, 114, 1);
+                color: white;
+                font-size: 2rem;
+            }
+
+        }
+
+}
+
+@media (max-width: 900px){
+
+    
+.modalStyle {
+    height: auto;
+    
+    .buttons {
+
+        .yesButton {
+            padding-left: 0;
+            padding-right: 0;
+            width: 4rem;
+            height: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .noButton {
+            padding-left: 0;
+            padding-right: 0;
+            width: 4rem;
+            height: 2rem;
+            font-size: 1.5rem;
+        }
+
+
+    }
+
+}
+
+}
+
+@media (min-width: 1200px){
+.rowContainerPlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+

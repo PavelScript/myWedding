@@ -4,7 +4,9 @@ import {useRef, useState, useEffect} from "react";
 import { useInView } from "motion/react"
 
 
-const colors = ["BBBAB5", "D19A5A", "EFECE5", "DEBEA7", "B7856A"];
+const colors1 = ["F1F1F3", "E5E1D8", "CCC8BC", "B6B9BE", "9DA6A3", "696559"];
+const colors2 = ["EEE8D8", "DFCFB6", "BD9A7E", "A78466", "837061"];
+const colors3 = ["C7B3A8", "BFB197", "B0765E", "85553E"];
 
 const mapThroughColors = (color) => {
     return (<td key={color} bgcolor = {color}></td>)
@@ -30,8 +32,15 @@ const Outfits = ({bgColor}) => {
             <div><table className={styles.table}>
                 <tbody>
                 <tr>
-                    {colors.map(mapThroughColors)}
+                    {colors1.map(mapThroughColors)}
                 </tr>
+                <tr>
+                    {colors2.map(mapThroughColors)}
+                </tr>
+                <tr>
+                    {colors3.map(mapThroughColors)}
+                </tr>
+
                 </tbody>
             </table>
             </div>

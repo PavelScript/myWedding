@@ -44,10 +44,12 @@ justify-content: center;
     justify-content: center;
     margin:auto;
     width: 70vw;
+    
 }
 .container td {
     height: 8vh;
     width: 8vh;
+    /* border-radius: 6rem; */
 }
 
 .container tr {
