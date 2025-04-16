@@ -46,7 +46,7 @@ const texts = {
     textH2: "Юрий и Анастасия!"
   },
 
-  BoryaDinara: {
+  BorisDinara: {
     textH1: "Дорогие",
     textH2: "Борис и Динара!"
   },
