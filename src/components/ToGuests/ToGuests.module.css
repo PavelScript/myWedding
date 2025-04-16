@@ -14,8 +14,8 @@
 }
 
 @font-face {
-    font-family: Brachetto;
-    src: url("./font/Brachetto.ttf") format("opentype");
+    font-family: CeremonoiusOne;
+    src: url("/src/fonts/ceremoniousone.ttf") format("opentype");
     
 }
 
@@ -35,11 +35,12 @@
 
 .greeting {    
     font-size: 4rem;
-    font-weight: 600;
-    font-family: Great Vibes, cursive;
+    font-weight: 500;
+    font-family: CeremonoiusOne, cursive;
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     color: #394972;
+
     
 
 }
@@ -49,7 +50,12 @@
     flex-direction: column;
     justify-self: center;
     text-align: center;
-    justify-items: center;}
+    justify-items: center;
+
+    h2:nth-child(2){
+        margin-bottom: 3rem;
+    }
+}
 
 .text{
     font-size: 1.5rem; 
@@ -64,7 +70,7 @@
 }   
 
 .photo {
-    width:25%;
+    width:30%;
     align-self: center;
     margin-top: 2%;
     margin-bottom: 5%;
@@ -103,7 +109,7 @@
 
     .photo {
         margin-top: 5%;
-        width:60%;
+        width:80%;
         margin-bottom: 10%;
         
     }
@@ -113,5 +119,11 @@
         margin-top: 10%;
         width: 50%;
         
+    }
+
+    .greetingContainer{
+        h2:nth-child(2){
+            margin-bottom: 1rem;
+        }
     }
 }

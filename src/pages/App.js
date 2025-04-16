@@ -23,7 +23,6 @@ function App() {
 
   const handleReject = () => {
     setIsModalOpen(false);
-    alert('Вы отказались от воспроизведения музыки.');
   };
 
 

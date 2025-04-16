@@ -40,6 +40,11 @@ h1, h3, p, label, button {
                 background-color: rgba(57, 73, 114, 1);
                 color: white;
                 font-size: 2rem;
+
+                
+            &:hover {
+                background-color: rgb(102, 127, 190);
+            }
             }
             
             .noButton {
@@ -49,6 +54,10 @@ h1, h3, p, label, button {
                 background-color: rgba(57, 73, 114, 1);
                 color: white;
                 font-size: 2rem;
+
+                &:hover {
+                    background-color: rgb(102, 127, 190);
+                }
             }
 
         }
@@ -69,6 +78,7 @@ h1, h3, p, label, button {
             width: 4rem;
             height: 2rem;
             font-size: 1.5rem;
+
         }
 
         .noButton {
