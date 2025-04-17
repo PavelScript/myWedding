@@ -6,6 +6,7 @@ import Outfits from '../components/Outfits/Outfits';
 import Schedule from '../components/Schedule/Schedule';
 import Place from '../components/Place/Place';
 import SendForm from '../components/SendForm/SendForm';
+import Wishes from '../components/Wishes/Wishes';
 import React, { useRef, useState } from 'react';
 
 
@@ -48,6 +49,7 @@ function App() {
       <Outfits bgColor='rgba(255,255,255,1)'/>
       <Countdown bgColor='rgba(57, 73, 114, 1)' fontColor='white'/>
       <SendForm bgColor='rgba(255,255,255,1)'/>
+      <Wishes bgColor='rgba(57, 73, 114, 1)'/>
       
       
     </div>

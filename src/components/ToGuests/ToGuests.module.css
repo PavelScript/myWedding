@@ -76,11 +76,6 @@
     margin-bottom: 5%;
 }
 
-.cake {
-    width: 15%;
-    margin-bottom: 5%;
-    margin-left: 20%;
-}
 
 
 
@@ -93,7 +88,7 @@
         height: 100lvh;
     } */
     .container .greeting {
-        font-size: 3rem;
+        font-size: 2.3rem;
         margin-bottom: 0.1rem;
 
 
