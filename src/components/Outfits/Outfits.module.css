@@ -9,6 +9,7 @@ box-shadow: 6px 7px 83px -10px rgba(57, 73, 114, 0.81) inset;
 display:flex;
 flex-direction: column;
 justify-content: center;
+padding-bottom: 3rem;
   
 }
 
@@ -43,21 +44,26 @@ justify-content: center;
     display:flex;
     justify-content: center;
     margin:auto;
-    width: 70vw;
+    width: 80vw;
     
 }
 .container td {
-    height: 8vh;
-    width: 8vh;
-    /* border-radius: 6rem; */
+    height: 2.9rem;
+    width: 2.9rem;
+    box-sizing: border-box;
+
 }
 
-.container tr {
-    border: 0.1rem solid black;
-}
+
 
 @media (min-width: 1200px) {
     .container {
-        height: 40vh;
+        padding-top: 3rem;
+        height: auto;
+    }
+
+    .container td {
+        height: 5.5rem;
+        width: 5.5rem;
     }
 }
