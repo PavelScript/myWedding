@@ -4,7 +4,7 @@ import {useRef, useState, useEffect} from "react";
 import { useInView } from "motion/react"
 
 
-const colors1 = ["F1F1F3", "E5E1D8", "CCC8BC", "B6B9BE", "9DA6A3", "696559"];
+const colors1 = ["#ddc6ca", "E5E1D8", "CCC8BC", "B6B9BE", "9DA6A3", "696559"];
 const colors2 = ["EEE8D8", "DFCFB6", "BD9A7E", "A78466", "837061"];
 const colors3 = [  "D5B5B8", "C7B3A8", "BFB197", "85553E"];
 
