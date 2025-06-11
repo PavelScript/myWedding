@@ -106,6 +106,11 @@ const texts = {
     textH2: "Владислав и Анастасия!"
   },
 
+  GrigoriyNatalyaMaria: {
+    textH1: "Дорогие",
+    textH2: "Григорий, Наталья и Мария!"
+  },
+
 
   
 

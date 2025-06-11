@@ -25,6 +25,7 @@ const TEXT_MAP_GREETING = {
   "/stasyulia": texts.StasYuliaEkaterinaAlexandra.textH1,
   "/alexandergalina": texts.AlexanderGalina.textH1,
   "/vladislavanastasia": texts.VladislavAnastasia.textH1,
+  "/grigoriynatalyamaria": texts.GrigoriyNatalyaMaria.textH1,
   "/": texts.defaultText.textH1,
 };
 const TEXT_MAP_GREETING_NAME = {
@@ -49,6 +50,7 @@ const TEXT_MAP_GREETING_NAME = {
   "/stasyulia": texts.StasYuliaEkaterinaAlexandra.textH2,
   "/alexandergalina": texts.AlexanderGalina.textH2,
   "/vladislavanastasia": texts.VladislavAnastasia.textH2,
+  "/grigoriynatalyamaria": texts.GrigoriyNatalyaMaria.textH2,
   "/": texts.defaultText.textH2,
 };
 
